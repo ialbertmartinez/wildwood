@@ -1,0 +1,612 @@
+/* .navbar  {
+width: 1640px;
+height: 99px;
+left: 0px;
+top: 0px;
+position: absolute;
+background: rgba(1, 36, 3, 0.89);
+}
+
+.logospan  {
+color: white;
+font-size: 33px;
+font-family: Girassol;
+font-weight: 400;
+letter-spacing: 2.97px;
+word-wrap: break-word;
+}
+
+.logo  {
+width: 486px;
+height: 46px;
+left: 34px;
+top: 36px;
+position: absolute;
+}
+
+.aboutspan  {
+
+color: white;
+font-size: 22px;
+font-family: Inter;
+font-weight: 400;
+word-wrap: break-word;
+}
+
+.about {
+width: 71.75px;
+height: 26.73px;
+left: 1308.58px;
+top: 35.64px;
+position: absolute;
+}
+
+.homespan  {
+
+color: white;
+font-size: 22px;
+font-family: Inter;
+font-weight: 400;
+word-wrap: break-word;
+}
+
+.home  {
+
+width: 70.61px;
+height: 26.73px;
+left: 1089.92px;
+top: 35.64px;
+position: absolute;
+}
+
+.horsesspan  {
+
+color: white;
+font-size: 22px;
+font-family: Inter;
+font-weight: 400;
+word-wrap: break-word;
+}
+
+.horses  {
+
+width: 84.28px;
+height: 26.73px;
+left: 1192.42px;
+top: 35.64px;
+position: absolute;
+}
+
+.newsspan  {
+
+color: white;
+font-size: 22px;
+font-family: Inter;
+font-weight: 400;
+word-wrap: break-word;
+}
+
+.news  {
+
+width: 67.19px;
+height: 26.73px;
+left: 1412.22px;
+top: 35.64px;
+position: absolute;
+}
+
+.contactspan  {
+
+color: white;
+font-size: 22px;
+font-family: Inter;
+font-weight: 400;
+word-wrap: break-word;
+}
+
+.contact  {
+
+width: 94.53px;
+height: 26.73px;
+left: 1511.31px;
+top: 35.64px;
+position: absolute;
+}
+
+
+.horseagetypespan  {
+
+color: black;
+font-size: 18px;
+font-family: GFS Didot;
+font-weight: 400;
+line-height: 24px;
+word-wrap: break-word;
+}
+
+.horseagetype  {
+
+width: 545px;
+height: 24px;
+}
+
+.horselineagespan  {
+
+color: black;
+font-size: 18px;
+font-family: GFS Didot;
+font-weight: 400;
+line-height: 24px;
+word-wrap: break-word;
+}
+
+.horselineage  {
+
+width: 545px;
+height: 24px;
+}
+
+.h3horsenaqmespan  {
+
+color: black;
+font-size: 32px;
+font-family: Girassol;
+font-weight: 400;
+text-transform: uppercase;
+line-height: 32px;
+word-wrap: break-word;
+}
+
+.h3HorseNaqme  {
+
+width: 508px;
+height: 50px;
+text-box-trim: trim-both;
+text-box-edge: cap alphabetic;
+}
+
+.linktextspan  {
+
+color: #933CA6;
+font-size: 14px;
+font-family: DM Serif Text;
+font-weight: 400;
+line-height: 21px;
+word-wrap: break-word;
+}
+
+.linktext  {
+
+width: 45px;
+height: 13px;
+text-align: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+}
+
+.linktext01span  {
+
+color: #933CA6;
+font-size: 14px;
+font-family: DM Serif Text;
+font-weight: 400;
+line-height: 21px;
+word-wrap: break-word;
+}
+
+.linktext01  {
+
+width: 57px;
+}
+
+.linktext02span  {
+
+color: #933CA6;
+font-size: 14px;
+font-family: DM Serif Text;
+font-weight: 400;
+line-height: 21px;
+word-wrap: break-word;
+}
+
+.linktext02  {
+
+width: 47px;
+}
+
+.linktext03span  {
+
+color: #933CA6;
+font-size: 14px;
+font-family: DM Serif Text;
+font-weight: 400;
+line-height: 21px;
+word-wrap: break-word;
+}
+
+.linktext03  {
+
+width: 44px;
+}
+
+.horsebackgroundspan  {
+
+color: black;
+font-size: 14px;
+font-family: GFS Didot;
+font-weight: 400;
+line-height: 21px;
+word-wrap: break-word;
+}
+
+.horsebackground  {
+
+width: 545px;
+height: 396px;
+}
+
+.horseimgwrap  {
+
+width: 506px;
+height: 763px;
+left: 0px;
+top: 0px;
+position: absolute;
+background: #D9D9D9;
+border-top-left-radius: 32px;
+border-bottom-left-radius: 32px;
+}
+
+.horselink  {
+
+padding: 12px;
+border-top: 1px #933CA6 solid;
+justify-content: center;
+align-items: center;
+gap: 10px;
+display: flex;
+}
+
+.cardfooter  {
+
+justify-content: flex-start;
+align-items: center;
+gap: 40px;
+display: inline-flex;
+}
+
+.coloneright  {
+
+width: 636px;
+height: 763px;
+padding: 40px;
+left: 506px;
+top: 0px;
+position: absolute;
+background: white;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+border-top-right-radius: 32px;
+border-bottom-right-radius: 32px;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 24px;
+display: inline-flex;
+}
+
+.horseimg  {
+
+width: 506px;
+height: 763px;
+left: 0px;
+top: 0px;
+position: absolute;
+}
+
+.horsecard  {
+
+align-self: stretch;
+height: 763px;
+position: relative;
+box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.35);
+}
+
+.horseCards  {
+
+align-self: stretch;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 100px;
+display: flex;
+}
+
+.main  {
+
+width: 1142px;
+height: 2127px;
+left: 249px;
+top: 340px;
+position: absolute;
+border-radius: 32px;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 19px;
+display: inline-flex;
+}
+
+.desktop1  {
+
+width: 1640px;
+height: 1184px;
+position: relative;
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.74) 0%, rgba(255, 255, 255, 0.74) 100%);
+background-blend-mode: hard_light, normal;
+} */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 1640px;
+	height: 100vh;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.74) 0%, rgba(0, 0, 0, 0.24) 100%);
+	background-blend-mode: hard_light, normal;
+}
+
+.page-heading {
+	width: 1440px;
+	height: 121px;
+	left: 60px;
+	top: 159px;
+	position: absolute;
+}
+h1 {
+	color: #3e250b;
+	font-size: 124px;
+	font-family: Girassol;
+	font-weight: 400;
+	line-height: 124px;
+	word-wrap: break-word;
+}
+
+.navbar {
+	width: 1640px;
+	height: 99px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	background: rgba(0, 35.56, 2.37, 0.89);
+}
+.logo {
+	width: 486px;
+	height: 46px;
+	left: 34px;
+	top: 36px;
+	position: absolute;
+	color: white;
+	font-size: 33px;
+	font-family: Girassol;
+	font-weight: 400;
+	letter-spacing: 2.97px;
+	word-wrap: break-word;
+}
+.nav-link-item {
+	width: 71.75px;
+	height: 26.73px;
+	left: 1308.58px;
+	top: 35.64px;
+	position: absolute;
+	color: white;
+	font-size: 22px;
+	font-family: Inter;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+/* .home {
+    width: 70.61px;
+    height: 26.73px;
+    left: 1089.92px;
+    top: 35.64px;
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.horses {
+    width: 84.28px;
+    height: 26.73px;
+    left: 1192.42px;
+    top: 35.64px;
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.news {
+    width: 67.19px;
+    height: 26.73px;
+    left: 1412.22px;
+    top: 35.64px;
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.contact {
+    width: 94.53px;
+    height: 26.73px;
+    left: 1511.31px;
+    top: 35.64px;
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+} */
+.page-heading {
+	width: 1440px;
+	height: 121px;
+	left: 60px;
+	top: 159px;
+	position: absolute;
+	color: #3e250b;
+	font-size: 124px;
+	font-family: Girassol;
+	font-weight: 400;
+	line-height: 124px;
+	word-wrap: break-word;
+}
+.main {
+	width: 1142px;
+	height: 2127px;
+	left: 249px;
+	top: 340px;
+	position: absolute;
+	border-radius: 32px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 19px;
+	display: inline-flex;
+}
+
+.horse-card-grid {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.horse-cards {
+	align-self: stretch;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 100px;
+	display: flex;
+}
+.horse-card {
+	align-self: stretch;
+	height: 763px;
+	position: relative;
+	box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.35);
+}
+
+.horse-age-type {
+	width: 41.34%; /*545px*/
+	height: 24px;
+	color: black;
+	font-size: 18px;
+	font-family: GFS Didot;
+	font-weight: 400;
+	line-height: 24px;
+	word-wrap: break-word;
+}
+.horse-lineage {
+	width: 545px;
+	height: 24px;
+	color: black;
+	font-size: 18px;
+	font-family: GFS Didot;
+	font-weight: 400;
+	line-height: 24px;
+	word-wrap: break-word;
+}
+
+.h3-horse-name {
+	width: 508px;
+	height: 50px;
+	text-box-trim: trim-both;
+	text-box-edge: cap alphabetic;
+	color: black;
+	font-size: 32px;
+	font-family: Girassol;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 32px;
+	word-wrap: break-word;
+}
+.card-footer {
+	justify-content: flex-start;
+	align-items: center;
+	gap: 40px;
+	display: inline-flex;
+}
+.horse-link {
+	padding: 12px;
+	border-top: 1px #933ca6 solid;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	display: flex;
+}
+.link-text {
+	width: 45px;
+	height: 13px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	color: #933ca6;
+	font-size: 14px;
+	font-family: DM Serif Text;
+	font-weight: 400;
+	line-height: 21px;
+	word-wrap: break-word;
+}
+/* .link-text {
+    width: 57px;
+    color: #933ca6;
+    font-size: 14px;
+    font-family: DM Serif Text;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+}
+.link-text {
+    width: 47px;
+    color: #933ca6;
+    font-size: 14px;
+    font-family: DM Serif Text;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+}
+.link-text {
+    width: 44px;
+    color: #933ca6;
+    font-size: 14px;
+    font-family: DM Serif Text;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+} */
+.horse-background {
+	width: 545px;
+	height: 396px;
+	color: black;
+	font-size: 14px;
+	font-family: GFS Didot;
+	font-weight: 400;
+	line-height: 21px;
+	word-wrap: break-word;
+}
+.horse-img-wrap {
+	width: 506px;
+	height: 763px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	background: #d9d9d9;
+	border-top-left-radius: 32px;
+	border-bottom-left-radius: 32px;
+}

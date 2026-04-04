@@ -1,0 +1,526 @@
+:root {
+	font-size: 16px;
+}
+.mb-4 {
+	margin-block: 1.5rem;
+}
+.card mb-4 {
+	max-height: 12.5rem;
+	overflow: scroll;
+	padding-bottom: 10px;
+}
+.ff-regular {
+	font-family: "kiln-sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.ff-italic {
+	font-family: "kiln-sans", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+.ff-spiked {
+	font-family: "kiln-sans-spiked", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.ff-spiked-italic {
+	font-family: "kiln-sans-spiked", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.ff-serif {
+	font-family: "kiln-serif", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.ff-serif-italic {
+	font-family: "kiln-serif", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.ff-serif-spiked {
+	font-family: "kiln-serif-spiked", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.ff-serif-spiked-italic {
+	font-family: "kiln-serif-spiked", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+/*------- GLOBAL RESET & RESPONSIVE BOX SIZING -------*/
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Unna";
+	color: #000;
+	font-size: 1.125rem;
+	line-height: 1.24;
+	overflow-y: scroll;
+	background: #000 url("images/royalArabian-green.jpg") fixed center;
+	background-size: cover;
+	/* Removed fixed min-width so phones can scale it */
+}
+
+h1 {
+	color: #3e250b;
+	font-size: 124px;
+	font-family: Girassol;
+	font-weight: 400;
+	line-height: 124px;
+	word-wrap: break-word;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #7c3dc2;
+	font-weight: bold;
+}
+a:hover {
+	color: #a160e9;
+}
+
+img {
+	max-width: 100%; /* Global safety rule: images never break out of their box */
+	height: auto;
+}
+
+hr {
+	height: 2px;
+	width: 25%;
+	display: block;
+	border: none;
+	background: white;
+	margin-inline: auto;
+}
+/*------- CONTENT BACKGROUND & CONTAINERS -------*/
+/* Modern centering using margin: 0 auto */
+#wrapper {
+	width: 100%;
+	max-width: 960px;
+	min-height: 520px;
+	margin: 0 auto;
+	background: #24391c url(images/bg-header.jpg) no-repeat top center;
+	background-size: 100% auto;
+	-moz-box-shadow: 5px 5px 10px #0f0f0f;
+	-webkit-box-shadow: 5px 5px 10px #0f0f0f;
+	box-shadow: 5px 5px 10px #0f0f0f;
+	position: relative;
+}
+
+#wrapper div.footer-bg {
+	/* Added a class just in case to target that bottom strip cleanly */
+	width: 100%;
+	height: 220px;
+	background: url(images/bg-footer.png) repeat-x;
+	position: absolute;
+	bottom: 0;
+}
+
+.content-box {
+	width: 100%;
+	max-width: 960px;
+	background: transparent;
+	margin: 80px auto 0; /* Centers horizontally, pushes down 80px from top */
+	padding: 6px;
+	position: relative;
+	z-index: 2;
+}
+
+.content {
+	width: 100%;
+	background: #d7d0cd;
+	padding: 20px;
+}
+
+/*------- HEADER & NAVBAR -------*/
+#header {
+	width: 100%;
+	margin: 0;
+}
+
+/* NAVBAR */
+#home-link {
+	color: #fff;
+	margin: 0 0 0 136px;
+	position: relative;
+	z-index: 4;
+}
+
+#logo {
+	display: block;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+	background-size: contain; /* Prevents logo from clipping on small screens */
+}
+
+.navbar-nav {
+	justify-content: flex-start;
+	gap: 1rem;
+}
+.bg-body-tertiary {
+	--bs-bg-opacity: 1;
+	background-color: #1c101e !important;
+	background: linear-gradient(to bottom, #1c101e, #1c101ea8 80%, #1c101e00);
+	border-bottom: 4px solid #3c2951;
+}
+.navbar-toggler:not(.collapsed) ~ .navbar-collapse .navbar-nav {
+	padding-left: 1rem;
+}
+.navbar-brand {
+	margin-left: 1.125rem;
+}
+.nav-link {
+	color: #efefefed;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+	color: #c090f4;
+	font-weight: bold;
+}
+.nav-link:hover {
+	color: #c090f4;
+}
+
+#menu {
+	width: 100%;
+	background: #1c101e;
+	/* margin: 190px 0 0; */
+	border-bottom: #3c2951 solid 6px;
+	display: flex; /* Modern flexbox for the menu */
+	flex-wrap: wrap; /* Allows menu items to wrap to a second line on phones */
+	justify-content: center;
+}
+
+#menu li {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.0625rem;
+}
+
+#menu a {
+	display: block;
+	color: #fff;
+	padding: 15px 10px;
+}
+
+#menu a:hover {
+	color: #c090f4;
+}
+#menu span {
+	display: block;
+	padding: 2px 8px;
+}
+
+.header {
+	width: 100%;
+}
+/*------- FOOTER -------*/
+#footer {
+	width: 100%;
+	max-width: 898px;
+	margin: 20px auto; /* Centers the footer */
+	color: #fff;
+	padding: 20px 6px 0;
+	text-align: center; /* Centered instead of right-aligned for better mobile UX */
+	font-size: 11px;
+	letter-spacing: 1px;
+	position: relative;
+	z-index: 3;
+}
+
+#footer a {
+	color: #fff;
+}
+#footer a:hover {
+	color: #bbb;
+}
+
+/*------- TEXT -------*/
+h1,
+h2,
+h3 {
+	font-family: "kiln-serif", sans-serif;
+	font-weight: 600;
+}
+/* 
+h1 {
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	color: #d7d0cddf;
+	margin-top: 2rem;	
+} */
+.page-header {
+	font-size: 2.5rem;
+	font-weight: normal;
+	letter-spacing: -0.0625rem;
+	color: #3e250b;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.page-header.light {
+	color: #d7d0cd;
+}
+.card-title {
+	line-height: 2;
+	margin-bottom: 0.5rem;
+}
+.card-subtitle {
+	font-family: "Unna", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+.redbold {
+	color: red;
+	font-weight: bold;
+}
+
+/* Your custom visual divider */
+.news-spacing {
+	width: 100%;
+	display: block;
+	height: 2px;
+	margin: 2em 0;
+	background-color: rgba(50, 36, 46, 1);
+}
+
+/*------- IMAGES -------*/
+
+.image-border-3px {
+	border-radius: 4px;
+}
+
+/* Updated to use max-width so they shrink on phones but max out at your desired size */
+.image-width-200px {
+	max-width: 200px;
+	width: 100%;
+}
+.image-width-300px {
+	max-width: 300px;
+	width: 100%;
+}
+.image-width-400px {
+	max-width: 400px;
+	width: 100%;
+}
+.image-width-500px {
+	max-width: 500px;
+	width: 100%;
+}
+
+/*------- MODERN SALES LAYOUT (FLEXBOX) -------*/
+.col-md-6 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-l {
+	justify-content: center;
+	align-items: center;
+}
+
+.horse-cards {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.horse-card {
+	display: flex;
+	background: #efefef;
+	gap: 16px;
+}
+
+.card-image-wrapper {
+	max-width: 300px;
+}
+
+.card-info {
+	padding: 20px;
+}
+
+.card-body {
+	padding-bottom: 20px;
+	max-height: 12.5rem;
+	overflow: scroll;
+}
+
+.card-text {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #d7d0cd58);
+}
+
+/* CARD BUTTONS */
+.card div.card-footer {
+	padding: 0;
+	display: flex;
+	gap: 0;
+	margin: 0;
+	margin-inline: 16px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #7c3dc2;
+}
+
+.card-footer .card-link {
+	display: block;
+	width: 33%;
+	line-height: 2;
+	font-weight: Bold;
+	font-size: 1.125rem;
+	padding: 0.25rem 1rem;
+	transition: background 0.5s ease;
+	text-align: center;
+	color: #44342e;
+	border: 1px solid #44342e;
+	border-radius: 0.25rem;
+	/*	flex-grow: 1;*/
+}
+
+.card-footer .card-link:hover {
+	background: #44342e;
+	color: #d7d0cd;
+	transition: background 0.5s ease;
+}
+
+.horse-image {
+	flex: 0 0 36%;
+	max-width: 36%;
+}
+.horse-details {
+	flex: 1;
+	min-width: 0;
+}
+
+.horse-details p {
+	margin: 0 0 10px 0;
+	line-height: 1.5;
+}
+
+.horse-details h3 {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 1.4em;
+}
+
+/* HORSE PHOTO GALLERY */
+.horse-photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.horse-photo-gallery img {
+	flex: 1 1 calc(33.333% - 32px);
+	max-width: 500px;
+	min-width: calc(33.333% - 32px);
+	height: auto;
+}
+
+/*------- MOBILE ADJUSTMENTS -------*/
+@media screen and (max-width: 768px) {
+	/* Stack the horse sales listings */
+	.horse-listing {
+		flex-direction: column;
+		gap: 15px;
+		border-bottom: 2px solid rgba(50, 36, 46, 0.2);
+		padding-bottom: 30px;
+	}
+
+	.horse-image {
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	/* Make the content box hug the edges of the phone */
+	.content-box {
+		margin-top: 20px;
+		padding: 0;
+	}
+
+	/* Adjust header for small screens */
+	#menu {
+		margin-top: 250px;
+	}
+	#logo {
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#home-link {
+		margin-left: 20px;
+	}
+	.col-r {
+		justify-content: left;
+		align-items: left;
+	}
+	.rounded-start {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	#container .card .col-l .horse-img {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	.horse-photo-gallery {
+		flex-direction: column;
+	}
+
+	.horse-photo-gallery img {
+		flex-shrink: 0;
+		min-width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.horse-card {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.card div.card-footer {
+		flex-direction: column;
+	}
+	/* .card-footer .card-link {
+		width: 100%;
+	} */
+}
+
+@media (max-width: 374px) {
+	.card div.card-footer {
+		flex-direction: column;
+		align-items: stretch;
+		min-width: 100%;
+		row-gap: 16px;
+		margin: 0;
+		width: 100%;
+	}
+	.card-footer .card-link {
+		/*		display: block;*/
+		width: 100%;
+		margin-inline: 0;
+		padding-inline: 5px;
+	}
+}

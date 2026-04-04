@@ -1,0 +1,295 @@
+/*------- GLOBAL RESET & RESPONSIVE BOX SIZING -------*/
+* { margin:0; padding:0; border:none; list-style:none; box-sizing: border-box; }
+
+body {
+    font-family: Geneva, sans-serif;
+    color: #000;
+    font-size: 12px;
+    overflow-y: scroll;
+    background: #000 url(images/bg-site.jpg) fixed center;
+    background-size: cover; 
+    /* Removed fixed min-width so phones can scale it */
+}
+
+a { outline:none; text-decoration:none; color:#7c3dc2; font-weight:bold; }
+a:hover { color:#a160e9; }
+
+/*------- CONTENT BACKGROUND & CONTAINERS -------*/
+/* Modern centering using margin: 0 auto */
+#wrapper {
+    width: 100%;
+    max-width: 960px;
+    min-height: 520px;
+    margin: 0 auto; 
+    background: #24391c url(images/bg-header.jpg) no-repeat top center;
+    background-size: 100% auto;
+    -moz-box-shadow: 5px 5px 10px #0f0f0f;
+    -webkit-box-shadow: 5px 5px 10px #0f0f0f;
+    box-shadow: 5px 5px 10px #0f0f0f;
+    position: relative; 
+}
+
+#wrapper div.footer-bg { /* Added a class just in case to target that bottom strip cleanly*/
+    width: 100%;
+    height: 220px;
+    background: url(images/bg-footer.png) repeat-x;
+    position: absolute;
+    bottom: 0;
+}
+
+#content-box {
+    width: 100%;
+    max-width: 898px;
+    background: #fff;
+    margin: 80px auto 0; /* Centers horizontally, pushes down 80px from top */
+    padding: 6px;
+    position: relative;
+    z-index: 10;
+}
+
+#content {
+    width: 100%; /* Uses available space inside content-box instead of hard pixel widths */
+    background: #d7d0cd;
+    padding: 20px;
+}
+
+/*------- HEADER & MENU -------*/
+#header {
+    width: 100%;
+    margin: -25px 0 0;
+    position: relative;
+}
+
+#home-link {
+    color: #fff;
+    margin: 0 0 0 136px;
+    position: relative;
+    z-index: 300;
+}
+
+#logo {
+    display: block;
+    width: 100%;
+    max-width: 555px;
+    height: 189px;
+    background: url(images/logo.png) no-repeat;
+    background-size: contain; /* Prevents logo from clipping on small screens */
+    margin: -17px auto 0; /* Centered instead of floated */
+    position: relative;
+    z-index: 300;
+}
+
+#header-image {
+    width: 100%;
+    height: auto;
+    min-height: 257px;
+    background: url(images/bg-header-image.png) top center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -32px;
+    left: 0;
+}
+
+#menu {
+    width: 100%;
+    background: #1c101e;
+    margin: 0;  
+    border-bottom: #3c2951 solid 6px;
+    display: flex; /* Modern flexbox for the menu */
+    flex-wrap: wrap; /* Allows menu items to wrap to a second line on phones */
+    justify-content: center;
+}
+
+#menu li {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#menu a {
+    display: block;
+    color: #fff;
+    padding: 15px 10px;
+}
+
+#menu a:hover { color: #c090f4; }
+#menu span { display: block; padding: 2px 8px; }
+
+/*------- FOOTER -------*/
+#footer {
+    width: 100%;
+    max-width: 898px;
+    margin: 20px auto; /* Centers the footer */
+    color: #fff;
+    padding: 20px 6px 0;
+    text-align: center; /* Centered instead of right-aligned for better mobile UX */
+    font-size: 11px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 10;
+}
+
+#footer a { color: #fff; }
+#footer a:hover { color: #bbb; }
+
+/*------- TEXT -------*/
+h1 { font-size:24px; font-weight:normal; letter-spacing:2px; color:#24391c; }
+.text-bold { font-weight: bold; }
+.redbold { color: red; font-weight: bold; }
+
+/* Your custom visual divider */
+.news-spacing {
+    width: 100%;
+    display: block;
+    height: 2px;
+    margin: 2em 0;
+    background-color: rgba(50,36,46,1.00);
+}
+
+/*------- IMAGES -------*/
+img {
+    max-width: 100%; /* Global safety rule: images never break out of their box */
+    height: auto;
+}
+
+.image-border-1px { border: #7a7674 solid 1px; }
+.image-border-2px { border: #7a7674 solid 2px; }
+.image-border-3px { border: #7a7674 solid 3px; border-radius: 4px; }
+
+/* Updated to use max-width so they shrink on phones but max out at your desired size */
+.image-width-200px { max-width:200px; width:100%; }
+.image-width-300px { max-width:300px; width:100%; }
+.image-width-400px { max-width:400px; width:100%; }
+.image-width-500px { max-width:500px; width:100%; }
+
+
+/* --- THE GRID SYSTEM --- */
+.horse-card-grid {
+    display: grid;
+    /* This creates 2 columns on desktop, auto-adjusting to 1 on small screens */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* --- THE CARD --- */
+.horse-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.horse-card {
+	background: #ffffff;
+	border-radius: 8px; /* Smooth, rounded corners */
+	overflow: hidden; /* Keeps the image inside the rounded corners */
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft, modern drop shadow */
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	display: grid;
+	grid-auto-flow: column;
+	align-content: stretch;
+	justify-content: center;
+	align-items: stretch;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+	gap: 1rem;
+	margin-block: 4rem;
+	padding: 0;
+}
+
+/* .horse-card {
+    background: #ffffff;
+    border-radius: 8px; 
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Hover effect: The card slightly lifts off the page when you mouse over it */
+/* .horse-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+} */
+.card-image-wrapper img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	/* border-bottom: 3px solid #7c3dc2; */
+}
+
+.image-border-3px {
+	/* border: #7a7674 solid 3px; */
+	border-radius: 4px;
+}
+img {
+	max-width: 100%;
+}
+/* .card-image-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; *//* Ensures the image fills the space without squishing */
+    /* border-bottom: 3px solid #7c3dc2; A pop of your theme color */
+/* } */
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Pushes the buttons to the bottom of the card */
+}
+
+.card-info h3 {
+    font-size: 1.6em;
+    margin: 0 0 5px 0;
+    color: #24391c;
+}
+
+.lineage {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* --- MODERN INFO TAGS --- */
+.horse-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #f0ebf5; /* Light purple from your theme */
+    color: #5a2b8e;
+    padding: 4px 12px;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+/* --- BUTTONS --- */
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto; /* Forces buttons to the bottom */
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    text-align: center;
+    transition: background 0.2s;
+    flex-grow: 1; /* Makes buttons stretch to fill the space evenly */
+}
+
+.btn-primary { background: #7c3dc2; color: white !important; }
+.btn-primary:hover { background: #5a2b8e; }
+
+.btn-secondary { background: #e0e0e0; color: #333 !important; }
+.btn-secondary:hover { background: #cccccc; }
+
+.btn-video { background: #24391c; color: white !important; }
+.btn-video:hover { background: #1a2a14; }
