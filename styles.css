@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ked4jph.css");
 :root {
 	font-size: 16px;
 }
@@ -8,49 +9,6 @@
 	max-height: 12.5rem;
 	overflow: scroll;
 	padding-bottom: 10px;
-}
-.ff-regular {
-	font-family: "kiln-sans", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.ff-italic {
-	font-family: "kiln-sans", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-}
-.ff-spiked {
-	font-family: "kiln-sans-spiked", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-}
-.ff-spiked-italic {
-	font-family: "kiln-sans-spiked", sans-serif;
-	font-weight: 600;
-	font-style: italic;
-}
-
-.ff-serif {
-	font-family: "kiln-serif", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.ff-serif-italic {
-	font-family: "kiln-serif", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-}
-
-.ff-serif-spiked {
-	font-family: "kiln-serif-spiked", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-}
-.ff-serif-spiked-italic {
-	font-family: "kiln-serif-spiked", sans-serif;
-	font-weight: 600;
-	font-style: italic;
 }
 
 /*------- GLOBAL RESET & RESPONSIVE BOX SIZING -------*/
@@ -68,13 +26,14 @@ body {
 	font-size: 1.125rem;
 	line-height: 1.24;
 	overflow-y: scroll;
-	background: #000 url("images/royalArabian-green.jpg") fixed center;
+	background-blend-mode: overlay;
+	background: url("images/royalArabian-purple.jpg") fixed center, #3c2951;
 	background-size: cover;
 	/* Removed fixed min-width so phones can scale it */
 }
 
 h1 {
-	color: #3e250b;
+	color: #c090f4;
 	font-size: 124px;
 	font-family: Girassol;
 	font-weight: 400;
@@ -106,20 +65,6 @@ hr {
 	margin-inline: auto;
 }
 /*------- CONTENT BACKGROUND & CONTAINERS -------*/
-/* Modern centering using margin: 0 auto */
-#wrapper {
-	width: 100%;
-	max-width: 960px;
-	min-height: 520px;
-	margin: 0 auto;
-	background: #24391c url(images/bg-header.jpg) no-repeat top center;
-	background-size: 100% auto;
-	-moz-box-shadow: 5px 5px 10px #0f0f0f;
-	-webkit-box-shadow: 5px 5px 10px #0f0f0f;
-	box-shadow: 5px 5px 10px #0f0f0f;
-	position: relative;
-}
-
 #wrapper div.footer-bg {
 	/* Added a class just in case to target that bottom strip cleanly */
 	width: 100%;
@@ -141,7 +86,12 @@ hr {
 
 .content {
 	width: 100%;
-	background: #d7d0cd;
+	/* background-blend-mode: overlay; */
+	/* background: url("images/horse-bg.png") no-repeat center, #d7d0cd; */
+	background: url("images/close-up-of-a-galloping-horse-kicking-up-dirt-during-sunset-photo.jpg") no-repeat center,
+		#d7d0cd;
+	background-size: cover;
+	background-position: center;
 	padding: 20px;
 }
 
@@ -150,7 +100,13 @@ hr {
 	width: 100%;
 	margin: 0;
 }
-
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
 /* NAVBAR */
 #home-link {
 	color: #fff;
@@ -225,9 +181,6 @@ hr {
 	padding: 2px 8px;
 }
 
-.header {
-	width: 100%;
-}
 /*------- FOOTER -------*/
 #footer {
 	width: 100%;
@@ -253,17 +206,11 @@ hr {
 h1,
 h2,
 h3 {
-	font-family: "kiln-serif", sans-serif;
-	font-weight: 600;
+	font-family: "kobenhavn", serif;
+	font-style: normal;
+	font-weight: 700;
 }
-/* 
-h1 {
-	font-size: 24px;
-	font-weight: normal;
-	letter-spacing: 2px;
-	color: #d7d0cddf;
-	margin-top: 2rem;	
-} */
+
 .page-header {
 	font-size: 2.5rem;
 	font-weight: normal;
@@ -272,9 +219,35 @@ h1 {
 	text-align: center;
 	margin-bottom: 10px;
 }
+
+h1.page-header {
+	font-size: 3.5rem;
+}
+
 .page-header.light {
 	color: #d7d0cd;
 }
+
+.intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+.intro p {
+	text-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.9);
+	max-width: 37ch;
+	line-height: 1.5;
+	font-size: 2.25rem;
+	font-family: "kobenhavn", serif;
+	font-weight: 400;
+	font-style: italic;
+	margin-top: -24rem;
+	padding-top: 0;
+	color: #44342e;
+}
+
 .card-title {
 	line-height: 2;
 	margin-bottom: 0.5rem;
