@@ -1,6 +1,8 @@
 @import url("https://use.typekit.net/ked4jph.css");
 :root {
 	font-size: 16px;
+	font-family: "early-sans-variable", sans-serif;
+	font-variation-settings: "wght" 300;
 }
 .mb-4 {
 	margin-block: 1.5rem;
@@ -21,27 +23,19 @@
 }
 
 body {
-	font-family: "Unna";
+	font-family: "early-sans-variable", sans-serif;
 	color: #000;
 	font-size: 1.125rem;
 	line-height: 1.24;
 	overflow-y: scroll;
 	background-blend-mode: overlay;
-	background: url("images/royalArabian-purple.jpg") fixed center, #3c2951;
+	background: url("./images/sprinkles.png") repeat, #d7d0cd;
 	background-size: cover;
 	/* Removed fixed min-width so phones can scale it */
 }
 
-h1 {
-	color: #c090f4;
-	font-size: 124px;
-	font-family: Girassol;
-	font-weight: 400;
-	line-height: 124px;
-	word-wrap: break-word;
-}
-
-a {
+a,
+a:link {
 	outline: none;
 	text-decoration: none;
 	color: #7c3dc2;
@@ -65,11 +59,11 @@ hr {
 	margin-inline: auto;
 }
 /*------- CONTENT BACKGROUND & CONTAINERS -------*/
-#wrapper div.footer-bg {
+#wrapper .footer-bg {
 	/* Added a class just in case to target that bottom strip cleanly */
 	width: 100%;
 	height: 220px;
-	background: url(images/bg-footer.png) repeat-x;
+	background: url("./images/bg-footer.png") repeat-x;
 	position: absolute;
 	bottom: 0;
 }
@@ -86,11 +80,8 @@ hr {
 
 .content {
 	width: 100%;
-	/* background-blend-mode: overlay; */
-	/* background: url("images/horse-bg.png") no-repeat center, #d7d0cd; */
-	background: url("images/close-up-of-a-galloping-horse-kicking-up-dirt-during-sunset-photo.jpg") no-repeat center,
-		#d7d0cd;
-	background-size: cover;
+	background: #d7d0cd url("./images/sprinkles.png") repeat center;
+	background-size: auto;
 	background-position: center;
 	padding: 20px;
 }
@@ -100,6 +91,7 @@ hr {
 	width: 100%;
 	margin: 0;
 }
+
 .header {
 	width: 100%;
 	display: flex;
@@ -183,19 +175,40 @@ hr {
 
 /*------- FOOTER -------*/
 #footer {
-	width: 100%;
+	height: 200px;
+	min-width: 100%;
 	max-width: 898px;
-	margin: 20px auto; /* Centers the footer */
-	color: #fff;
+	margin: 20px auto 0; /* Centers the footer */
+	/* margin-bottom: 0; */
 	padding: 20px 6px 0;
-	text-align: center; /* Centered instead of right-aligned for better mobile UX */
-	font-size: 11px;
-	letter-spacing: 1px;
 	position: relative;
 	z-index: 3;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 1rem;
+
+	text-align: center; /* Centered instead of right-aligned for better mobile UX */
+	font-size: 11px;
+	letter-spacing: 1px; /* min-width: 100%; */
+	color: #fff;
+	background: #242424;
 }
 
-#footer a {
+#foooter,
+#footer p:last-child {
+	min-width: 100%;
+}
+#footer p:last-child,
+#footer p:last-child a:link {
+	color: rgba(255, 255, 255, 0.85);
+	margin-top: 2rem;
+}
+#footer a,
+#footer p {
 	color: #fff;
 }
 #footer a:hover {
@@ -209,8 +222,22 @@ h3 {
 	font-family: "kobenhavn", serif;
 	font-style: normal;
 	font-weight: 700;
+	text-align: center;
 }
 
+h1 {
+	text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.8);
+	letter-spacing: -0.9px;
+	margin-top: 2rem;
+	word-wrap: break-word;
+}
+h3 {
+	/* font-weight: 300; */
+	color: #7447a6;
+}
 .page-header {
 	font-size: 2.5rem;
 	font-weight: normal;
@@ -276,6 +303,9 @@ h1.page-header {
 }
 
 /*------- IMAGES -------*/
+.featured-img {
+	border: 8px ridged #3c2951;
+}
 
 .image-border-3px {
 	border-radius: 4px;
